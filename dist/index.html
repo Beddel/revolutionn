@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L - Revolution</title>
+    <link rel="icon" src="/dist/bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Include AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+
+
+<body class="montserrat-regular">
+    <!-- Navbar for Mobile Devices -->
+<header class="py-4  md:hidden" >
+    
+     <!-- Hide on medium screens and larger -->
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- U-style logo-->
+        <div class="flex items-center">
+            <a href="../index.html" class="flex items-center px-6 text-2xl font-bold">
+                <img src="bg.png" alt="Logo" class="inline-block mr-2" style="width:50px; height:auto;">
+                <div>
+                    Learning<br>Revolution
+                </div>
+            </a>
+        </div><!-- Mobile Menu Button -->
+        <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="hidden bg-black text-white mt-2">
+        <ul class="flex flex-col items-center text-right font-semibold">
+            <li class="w-full"><a href="#about" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">ABOUT</a></li>
+            <li class="w-full"><a href="#method" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">METHOD</a></li>
+            <li class="w-full"><a href="#lerning" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">LEARNING</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Original Navbar (Hidden on Small Screens) -->
+<header class=" py-4 hidden md:block ">
+     <!-- Hide on small screens -->
+    <div class="container mx-auto px-4 flex items-center">
+        <!-- U-style Logo -->
+        <div class="flex items-center">
+            <a href="../index.html" class="flex items-center px-6 text-2xl font-bold">
+                <img src="/dist/bg.png" alt="Logo" class="inline-block mr-2" style="width:50px; height:auto;">
+                <div>
+                    Learning<br>Revolution
+                </div>
+            </a>
+        </div><!-- Navbar Buttons -->
+        <nav class="flex-grow text-center">
+            <ul class="flex justify-center space-x-4 font-semibold uppercase">
+                <li><a href="#about" class="px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300">ABOUT</a></li>
+                <li><a href="#method" class="px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300">METHOD</a></li>
+                <li><a href="#lerning" class="px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300">LEARNING</a></li>
+            </ul>
+        </nav>
+
+        <!-- Join Now Button -->
+        <div>
+            <a href="#lerning" class="bg-black text-white hover:bg-white hover:text-black border-2 hover:border-black rounded-full font-semibold text-sm transition-all duration-300 py-2 px-6">UPGRADE YOURSELF</a>
+        </div>
+    </div>
+</header>
+
+<!--main content-->
+<main>
+    <!-- Hero section -->
+    <section id="home" class="h-screen justify-center items-center text-black py-full flex flex-col gap-full">
+        <div class="w-full h-full flex flex-col md:flex-row bg-white shadow-lg rounded-lg p-6 md:p-full">
+            <div  class="text-section flex-1 mb-6 md:mb-0  p-40">
+                <h1 data-aos="fade-left" data-aos-delay="1000" class="text-4xl  font-bold text-gray-800 mb-4 top-10 ">Optimal and Efficient Learning Methods</h1>
+                <p  data-aos="fade-left" data-aos-delay="1500" class="text-justify text-gray-600 mb-6 ">Effective learning is an approach or learning method that helps someone obtain optimal knowledge, skills or understanding in a relatively short time and with efficient effort.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" class="image-section flex-col flex  items-center">
+            <img src="/dist/bg.png" alt="Blockspace Illustration" class="rounded-lg">
+        </div>
+    </section>
+
+    <!--ABOUT-->
+     <section id="about" class="h-screen flex flex-col justify-center items-center bg-black">
+        <!--star-->
+        <div class="h-20 w-20 text-white flex mx-auto items-center justify-center my-8">
+        </div>
+        
+            <div class="flex flex-col gap-8">
+                <div data-aos="fade-up" class="flex justify-center items-center text-center">
+                    <h3 class="md:text-8xl text-6xl uppercase anton-regular text-white  font-semibold">THE IMPORTANCE<br>OF<br>EFFECTIVE LEARNING</h3>
+                </div>
+    
+                <div data-aos="fade-up" class="text-lg  text-white flex justify-center mx-auto items-center text-center w-3/4">
+                    <p>
+                        Knowing yourself is an important process in personal development that helps us understand who we really are, what we want, and how we can reach our maximum potential.
+                        Know yourself.What do you want.then improve your learning process</p>
+                </div>
+     <!-- Review -->
+     <div class="lg:flex hidden flex-row gap-5 font-semibold uppercase justify-center items-center text-sm text-center">
+        <div data-aos="fade-down" data-aos-delay="200" data-aos-anchor-placement="bottom-bottom" class="bg-gray-500 hover:bg-white border-2 border-black hover:border-white rounded-3xl px-5 py-3 transition-all duration-300">Keep Studying</div>
+        <div data-aos="fade-down" data-aos-delay="400" data-aos-anchor-placement="bottom-bottom" class="bg-gray-500 hover:bg-white border-2 border-black hover:border-white rounded-3xl px-5 py-3 transition-all duration-300">Dont Give Up</div>
+        <div data-aos="fade-down" data-aos-delay="600" data-aos-anchor-placement="bottom-bottom" class="bg-gray-500 hover:bg-white border-2 border-black hover:border-white rounded-3xl px-5 py-3 transition-all duration-300">Do change</div>
+        <div data-aos="fade-down" data-aos-delay="800" data-aos-anchor-placement="bottom-bottom" class="bg-gray-500 hover:bg-white border-2 border-black hover:border-white rounded-3xl px-5 py-3 transition-all duration-300">Face it All</div>
+    </div>
+</div>
+    <div data-aos="fade-right" class="flex justify-center items-center gap-5">
+        <a href="#lerning" class="bg-black text-white hover:bg-white hover:text-black border-2 hover:border-black rounded-full font-semibold text-sm transition-all duration-300 py-2 px-6">UPGRADE YOURSELF</a>
+    </div>
+    
+</section>
+
+<!-- method -->
+
+<section id="method" class="h:auto bg-gray-100 py-8 px-8 flex flex-col justify-center">
+    <div data-aos-anchor-placement="center-bottom" class="flex flex-row justify-between my-5">
+        <h1 data-aos="fade-right" class="text-4xl anton-regular font-bold">METHOD</h1>
+        <a data-aos="fade-left" class="items-center font-semibold" href="#">SEE ALL</a>
+    </div>
+    <!--mtod -->
+    <div class="bg-gray-100">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div  class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!--metod 1-->    
+                <div  data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-duraction="100" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon1.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Make a regular schedule."</h3>
+                    <p class="mt-2 text-gray-600">Have a regular study schedule and stick to it. This helps you divide your time well between studying and other activities.</p>
+                </div>
+                <!--metod 2-->
+                <div  data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200" data-aos-duraction="200"  class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon2.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">“Focus on difficult material.”</h3>
+                    <p class="mt-2 text-gray-600">Prioritize studying difficult material first. This allows you to focus more of your energy and time on material that requires more attention.</p>
+                </div>
+                <!--metod 3-->
+                <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300" data-aos-duraction="300" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon3.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">“Creating a comfortable learning atmosphere”</h3>
+                    <p class="mt-2 text-gray-600">Make sure your study place is comfortable and free from distractions. Apart from that, make sure you have enough study equipment such as books, notes and writing utensils.</p>
+                </div>
+                <!--metod 4-->
+                <div  data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="400" data-aos-duraction="400" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon4.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Know yourself"</h3>
+                    <p class="mt-2 text-gray-600">Knowing ourselves is the process of understanding who we are in depth, including understanding our values, beliefs, strengths, weaknesses, interests, emotions and motivations. It involves introspection or self-reflection to gain insight into the way we think, feel, and behave in various situations.</p>
+                </div>
+                <!--metod 5-->
+                <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500" data-aos-duraction="500" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon5.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Use effective study methods."</h3>
+                    <p class="mt-2 text-gray-600">Everyone has a different way of learning. Find a study method that is effective for you, or discuss it with classmates.</p>
+                </div>
+                <!--metod 6-->
+                <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600" data-aos-duraction="600" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon6.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Do the practice over and over again"</h3>
+                    <p class="mt-2 text-gray-600">There is always an Exercise at the end of each lesson chapter. Do this exercise to evaluate your understanding of the material studied.</p>
+                </div>
+                <!--metod 7-->
+                <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="700" data-aos-duraction="700" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon7.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Ask your closest friends or family"</h3>
+                    <p class="mt-2 text-gray-600">Don't be afraid to ask friends or family if you have difficulty understanding the material you are studying.</p>
+                </div>
+                <!--metod 8-->
+                <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="800" data-aos-duraction="800" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon8.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Get enough rest"</h3>
+                    <p class="mt-2 text-gray-600">Make sure you get enough rest and don't forget to take breaks. Your body and brain need time to rest so that they can work optimally while studying.</p>
+                </div>
+                <!--metod 9-->
+                <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-delay="900" data-aos-duraction="900" class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="mb-4 flex items-center justify-center">
+                        <img src="/dist/icon9.png" alt="Icon" class="w-20 h-20">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">"Periodic self-evaluation"</h3>
+                    <p class="mt-2 text-gray-600">Carry out regular self-evaluations to find out your weaknesses and strengths in studying. This allows you to improve your way of learning.</p>
+                </div>
+            </div>
+            
+            </div>
+            <div  data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom" data-aos-delay="1000" data-aos-duration="1000" class="flex justify-center items-center font-bold text-4xl transition-all duration-300 py-2 px-6">
+                <h1>Learn more about <br> yourself and <br> how you will learn</h1>
+            </div>
+            <!-- button -->
+    <div data-aos="fade-right" data-aos-delay="900" data-aos-duration="900"  class="flex justify-center items-center gap-5">
+        <a href="#lerning" class="bg-black text-white hover:bg-white hover:text-black border-2 hover:border-black rounded-full font-semibold text-sm transition-all duration-300 py-2 px-6">UPGRADE YOURSELF</a>
+    </div>
+        </div>
+    </div>
+</section>
+
+<!--LEARNING-->
+<body class="bg-gray-100 text-gray-800">
+
+    <section id="lerning" class="max-w-7xl mx-auto p-6">
+        <div data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom" data-aos-delay="600" data-aos-duration="600" class="flex flex-row justify-between my-4 mb-4">
+        <h2 class="text-4xl font-bold mb-8">Learning Reference</h2>
+        </div>
+        <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!--REF1-->
+            <div  data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom"  data-aos-delay="700" data-aos-duration="700" class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <a href="https://youtu.be/3_Ymdh1DsGw?si=HttZXpaLyed9ImDe" target="_blank">
+                    <img src="/dist/ref1.png" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Rahasia Mengenali Diri di Usia 20-an menurut ilmu psikologi ft. Ayank Irma</h3>
+                    <p class="text-gray-600">Irma Gustiana atau sering disapa Ayank Irma adalah Founder dari Klinik Ruang Tumbuh, pusat konsultasi psikologi, terapi, dan pengembangan diri.Di episode pertama ini Kak Irma akan membahas cara mengenali dari sendiri dalam ilmu psikologi.
+                        </p>
+                </div>
+            </div>
+
+            <!--REF2-->
+            <div  data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom"  data-aos-delay="800" data-aos-duration="800" class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <a href="https://youtu.be/JzvMIGPFEqU?si=MsyAsyz3gZoNkwMD" target="_blank">
+                    <img src="/dist/ref2.png" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Tips Belajar Efektif (Cara Memahami Apa Yang Dipelajari)</h3>
+                    <p class="text-gray-600">Di video ini, Satu Persen membahas bagaimana cara kamu memahami apa yang kamu pelajari.</p>
+                </div>
+            </div>
+
+            <!--REF3-->
+            <div data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom" data-aos-delay="900" data-aos-duration="900"  class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <a href="https://youtu.be/VBSb63bJGXo?si=3A-m4e-meNiEEpfV" target="_blank">
+                    <img src="/dist/ref3.png" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Stop Jadi Jahat Sama Diri Sendiri!!</h3>
+                    <p class="text-gray-600"> Siapa nih yang ngerasa ngga punya kelebihan apa apa? Jadinya ragu deh mau ambil kesempatan yang sebenarnya ada di depan mata gara-gara nganggep kalau lo nggak bisa apa apa. Nah gimana sih sebenernya cara untuk mengenal kemampuan diri? Di video ini, Satu Persen membahas pentingnya mengenal kemampuan diri untuk menghadapi rasa insecure.</p>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+</body>
+</main>
+<footer class="mt-24 bg-white flex flex-col justify-center items-center">
+    <p class="text-[#101010] font-thin p-2 "> 
+      <a href="https://www.instagram.com/bedeel.e?igsh=ZGVyc244c2p6MGR1">@copyright 2024
+        
+      </a>
+    </p>
+
+<!-- Index JS -->
+<script src="index.js"></script>
+<!-- Include AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  // Initialize AOS
+  AOS.init();
+</script>
+</body>
+</html>
